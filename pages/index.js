@@ -1,16 +1,12 @@
-import { useUser, UserButton } from '@clerk/nextjs';
+import Navbar from '../Components/Navigation/Navbar';
 
-export default function Home() {
-  // Get the current user's firstName
-  const { firstName } = useUser();
-
+const Home = (props) => {
   return (
-    <div className={styles.container}>
-      <header>
-        {/* Mount the UserButton component */}
-        <UserButton />
-      </header>
-      <main>Hello, {firstName}!</main>
+    <div>
+      <Navbar />
+      <div className="h-full">Hello</div>
     </div>
   );
-}
+};
+
+export default Home;
