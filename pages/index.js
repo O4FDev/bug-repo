@@ -2,10 +2,9 @@ import Navbar from '../Components/Navigation/Navbar';
 
 const Home = (props) => {
   return (
-    <div>
-      <Navbar />
-      <div className="h-full">Hello</div>
-    </div>
+    <h1 className='text-3xl font-bold underline'>
+      Test
+    </h1>
   );
 };
 
